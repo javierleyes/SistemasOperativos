@@ -7,6 +7,9 @@
 #Leer DIRABUS, del archivo INICIO.dat
 #VAR_DIRABUS=$(grep '^DIRABUS=' $HOME/INICIO.dat)
 
+#Ejecutar . ./demonio.sh &
+#Para matar el proceso kill -9 (pid)
+
 NUMERO_CICLO=1
 
 while true

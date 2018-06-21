@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # Recibe el nombre del archivo
 validar_archivo()
@@ -15,7 +14,7 @@ validar_archivo()
 	# Valido formato del nombre
 	formato_es_valido=$(echo "$1" | grep -c -i "^AP_[0-9]\{6\}\.log$")
 	
-	if [ $formato_es_valido != 1 ]
+	if [ $formato_es_valido -ne 1 ]
 	then
 		echo "El formato del nombre no es valido"
 		return 0
@@ -40,7 +39,7 @@ validar_archivo()
 	fi
 
 	# Mes adelantado
-	if [ $anio -eq $anio_actual ] && [ $mes -gt $mes_actual ]
+	if [ [ $anio -eq $anio_actual ] -a [ $mes -gt $mes_actual ] ]
 	then
 		return 0
 	fi

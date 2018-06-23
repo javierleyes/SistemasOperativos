@@ -1,1 +1,4 @@
-K13, gerente de comunicaciones
+K13,gerente de comunicaciones
+K12,gerente de sistemas
+K14,gerente de redes
+K16,gerente de diversion
